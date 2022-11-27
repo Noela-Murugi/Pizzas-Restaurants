@@ -18,10 +18,10 @@ puts "Seeding database..."
   ]
 )
 
-restaurant_pizzas  = RestaurantPizza.create(  [
-  { price: 5, pizza_id: 1, restaurant_id: 3},
-  { price: 6, pizza_id: 2, restaurant_id: 4},
-  { price: 7, pizza_id: 3, restaurant_id: 5}
-]
+  restaurant_pizzas  = RestaurantPizza.create(  [
+    { price: 5, pizza_id: 1, restaurant_id: 3},
+    { price: 6, pizza_id: 2, restaurant_id: 4},
+    { price: 7, pizza_id: 3, restaurant_id: 5}
+  ]
 )
 puts "Done Seeding"
