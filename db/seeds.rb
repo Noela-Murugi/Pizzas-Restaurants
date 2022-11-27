@@ -7,16 +7,21 @@
 #   Character.create(name: "Luke", movie: movies.first)
 puts "Seeding database..."
   restaurants  = Restaurant.create(  [
-      { name: "Restaurant1", address: "Embakasi" },
-      { name: "Restaurant2", address: "Langata" },
-      { name: "Restaurant3", address: "Langata" }
+      { name: "Sottocasa NYC", address: "298 Atlantic Ave, Brooklyn, NY 11201" },
+      { name: "PizzArte", address: "69 W 55th St, New York, NY 10019" },
   ]
 )
 
   pizza  = Pizza.create(  [
-      { name: "Hawaiian", ingredients: "Mushrooms"},
-      { name: "BBQ", ingredients: "Cheese"},
-      { name: "Tikka", ingredients: "Chicken"}
+      { name: "Cheese", ingredients: "Dough, Tomato Sauce, Cheese"},
+      { name: "Pepperoni", ingredients: "Dough, Tomato Sauce, Cheese, Pepperoni"},
   ]
+)
+
+restaurant_pizzas  = RestaurantPizza.create(  [
+  { price: 5, pizza_id: 1, restaurant_id: 3},
+  { price: 6, pizza_id: 2, restaurant_id: 4},
+  { price: 7, pizza_id: 3, restaurant_id: 5}
+]
 )
 puts "Done Seeding"
